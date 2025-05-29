@@ -17,4 +17,5 @@ cd Djangopractice
 - # Run the Django development server
 ```bash
 python manage.py runserver
+# python manage.py runserver 8000 (port) for specifying a port
 ```
