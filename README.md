@@ -26,7 +26,7 @@ uv venv
 - Activate the virtual environment
 ```bash:
 # On Windows
-venv\Scripts\activate
+.venv\Scripts\activate
 # On macOS/Linux
 source venv/bin/activate
 ```
