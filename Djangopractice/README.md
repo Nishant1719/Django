@@ -19,3 +19,7 @@ cd Djangopractice
 python manage.py runserver
 # python manage.py runserver 8000 (port) for specifying a port
 ```
+- # Close the server
+```bash
+Ctrl + C
+```
