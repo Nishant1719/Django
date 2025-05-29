@@ -21,7 +21,7 @@ pip install uv
 ```
 - Create a virtual environment with uv:
 ```bash:
-uv venv .venv
+uv venv
 ```
 - Activate the virtual environment
 ```bash:
