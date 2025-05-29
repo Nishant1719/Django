@@ -1,7 +1,7 @@
 # How to install Django in python virtual environment
     - Create a virtual environment
     ```bash:
-    python -m venv venv
+    python -m venv .venv
     ```
     - Activate the virtual environment
     ```bash:
