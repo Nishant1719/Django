@@ -1,16 +1,37 @@
 # How to install Django in python virtual environment
-    - Create a virtual environment
-    ```bash:
-    python -m venv .venv
-    ```
-    - Activate the virtual environment
-    ```bash:
-    # On Windows
-    venv\Scripts\activate
-    # On macOS/Linux
-    source venv/bin/activate
-    ```
-    - Install Django
-    ```bash:
-    pip install django
-    ```
+- Create a virtual environment
+```bash:
+python -m venv .venv
+```
+- Activate the virtual environment
+```bash:
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+```
+- Install Django
+```bash:
+pip install django
+```
+# using Faster package manager like uv:
+- Install uv:
+```bash:
+pip install uv
+```
+- Create a virtual environment with uv:
+```bash:
+uv venv .venv
+```
+- Activate the virtual environment
+```bash:
+# On Windows
+venv\Scripts\activate
+# On macOS/Linux
+source venv/bin/activate
+```
+- Install Django using uv:
+```bash:
+uv install django
+```
+
