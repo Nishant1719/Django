@@ -32,6 +32,6 @@ source venv/bin/activate
 ```
 - Install Django using uv:
 ```bash:
-uv install django
+uv pip install django
 ```
 
