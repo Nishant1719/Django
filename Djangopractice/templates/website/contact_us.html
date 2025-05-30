@@ -1,18 +1,11 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django-Practice</title>
-    <!-- <link rel="stylesheet" href="../../static/style.css"> -->
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <h1>Contact me</h1>
-    <p>This no: +84 3948-2340</p>
-    <p>Street : 1447 Rolling Green Rd</p>
-    <p>Email:<p>addison.franklin@example.com</p></p>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<h1>Contact me</h1>
+<p>This no: +84 3948-2340</p>
+<p>Street : 1447 Rolling Green Rd</p>
+<p>Email:<p>addison.franklin@example.com</p></p>
+{% endblock %}
 

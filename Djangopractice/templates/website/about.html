@@ -1,15 +1,8 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django-about</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
+{% block title %}about Me{% endblock title %}
 
-<body>
+{% block content %}
     <h1>About me</h1>
     <p>Lobortis elementum nibh tellus molestie nunc non blandit. Dui nunc mattis enim ut tellus elementum. Nec
         ullamcorper sit amet risus nullam eget. Risus nullam eget felis eget nunc lobortis mattis. Sed faucibus turpis
@@ -22,6 +15,4 @@
         eu.</p>
     <h1>About the project</h1>
     <p>This project is basically a practice with django not html and css </p>
-</body>
-
-</html>
+{% endblock %}

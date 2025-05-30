@@ -1,14 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-App</title>
-    <link rel="stylesheet" href="../../static/style.css">
-</head>
-<body>
-    <h1>About APP</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque reiciendis voluptates blanditiis magnam ea! Neque sapiente nulla recusandae, iusto delectus exercitationem perferendis repudiandae consequuntur voluptate dignissimos voluptates quia accusantium.</p>
-    <p>Created a app, with Django!</p>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block title %}about Me{% endblock title %}
+
+{% block content %}
+    <h1>About me</h1>
+    <p>Lobortis elementum nibh tellus molestie nunc non blandit. Dui nunc mattis enim ut tellus elementum. Nec
+        ullamcorper sit amet risus nullam eget. Risus nullam eget felis eget nunc lobortis mattis. Sed faucibus turpis
+        in eu. Nisi porta lorem mollis aliquam ut porttitor leo.</p>
+    <p>Ultricies mi quis hendrerit dolor magna eget est. Fringilla phasellus faucibus scelerisque eleifend donec pretium
+        vulputate sapien. Fermentum leo vel orci porta. Pharetra convallis posuere morbi leo urna molestie. Non
+        curabitur gravida arcu ac tortor dignissim convallis. Non curabitur gravida arcu ac tortor dignissim convallis
+        aenean. Eleifend donec pretium vulputate sapien. Ultrices sagittis orci a scelerisque purus semper eget. Nulla
+        malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Vitae nunc sed velit dignissim sodales ut
+        eu.</p>
+    <h1>About the project-app</h1>
+    <p>This is app made with Django! </p>
+{% endblock %}
