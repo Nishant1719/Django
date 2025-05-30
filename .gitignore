@@ -1,2 +1,4 @@
 **/__pycache__/
-Djangopractice/Djangopractice/__pycache__/settings.cpython-313.pyc
+__pycache__/
+*.py[cod]
+
