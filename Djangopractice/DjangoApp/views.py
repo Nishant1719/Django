@@ -7,4 +7,4 @@ def all_DjangoApp(request):
 
 
 def about_app(request):
-    return render(request,'DjangoApp/about-app.html')
+    return render(request,'DjangoApp/about_app.html')
