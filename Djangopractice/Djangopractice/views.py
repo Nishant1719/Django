@@ -5,10 +5,10 @@ def home(request):
     return render(request, 'website/index.html')
 
 def about(request):
-    return HttpResponse("Hello, World! about page")
+    return render(request,'website/about.html')
 
 def contact(request):
-    return HttpResponse("Hello, World! contact page")
+    return render(request,'website/contact_us.html')
 
 
 
