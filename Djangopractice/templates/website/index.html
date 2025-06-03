@@ -1,4 +1,5 @@
-{% load static %}
+{% extends "layout.html" %}
+{% comment %} {% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,4 +16,12 @@
 
 <!-- https://www.youtube.com/watch?v=66lfSjIrG8M&list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy&index=4 -->
  <!-- Time Stamp : 22mins -->
-  <!-- Templating engine -->
+  <!-- Templating engine --> {% endcomment %}
+
+{% block title %}
+    Django-Practice
+{% endblock %}
+
+{% block content %}
+    <h1>Django Practice : work in progress</h1>
+{% endblock %}
