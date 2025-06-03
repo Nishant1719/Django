@@ -14,10 +14,4 @@
             ]
     
 - # Notes on Integrating tailwind : Terminal Commands
-    - Step 1: pip install django-tailwind
-        - pip install 'django-tailwind[reload]' (Optional)
-    
-    - Step 2: 
-        (Django) PS C:\Users\Nishant\Desktop\Study\Django\Djangopractice> python .\manage.py tailwind init
-
-    - Step 3:
+    - https://www.youtube.com/watch?v=4bgAIKV3BVw&list=PLu71SKxNbfoDOf-6vAcKmazT92uLnWAgy&index=5
