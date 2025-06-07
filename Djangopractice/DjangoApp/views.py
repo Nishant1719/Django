@@ -1,10 +1,10 @@
 from django.shortcuts import render,redirect
-from .models import chaiVarity
+from .models import ChaiVariety
 from django.shortcuts import get_object_or_404
 # Create your views here.
 
 def all_DjangoApp(request):
-    chais = chaiVarity.objects.all()
+    chais = ChaiVariety.objects.all()
     return render(request,'DjangoApp/all_DjangoApp.html',{'chais':chais})
 
 
@@ -19,7 +19,7 @@ def about_app(request):
 # Alternately:
 def give_description(request, id):
     try:
-        chai = chaiVarity.objects.get(pk=id) #
-    except chaiVarity.DoesNotExist:
+        chai = ChaiVariety.objects.get(pk=id) #
+    except ChaiVariety.DoesNotExist:
         return redirect('/DjangoApp') 
     return render(request, 'DjangoApp/chai_description.html', {'chai': chai})
