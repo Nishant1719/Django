@@ -16,7 +16,8 @@ class chaiVarity(models.Model):
     date_added = models.DateTimeField(default=timezone.now)
     type = models.CharField(max_length=2, choices=CHAI_TYPE_CHOICE)
     description = models.TextField(max_length=255,default='')
-    
+    price = models.IntegerField(null=True, blank=True, default=None)
+
     def __str__(self):
         return self.name
     

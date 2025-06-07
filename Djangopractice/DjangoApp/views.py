@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import chaiVarity
 from django.shortcuts import get_object_or_404
 # Create your views here.
@@ -11,7 +11,15 @@ def all_DjangoApp(request):
 def about_app(request):
     return render(request,'DjangoApp/about_app.html')
 
-def give_description(request,id):
-    chai = get_object_or_404(chaiVarity, pk=id)
-    return render(request,'DjangoApp/chai_description.html',{'chai':chai})
-    
+# def give_description(request,id):
+#     chai = get_object_or_404(chaiVarity, pk=id)
+    # if chai == None: # I cannot do this way as it directly raises 404 if object is not found
+#         redirect('DjangoApp/')
+#     return render(request,'DjangoApp/chai_description.html',{'chai':chai})
+# Alternately:
+def give_description(request, id):
+    try:
+        chai = chaiVarity.objects.get(pk=id) #
+    except chaiVarity.DoesNotExist:
+        return redirect('/DjangoApp') 
+    return render(request, 'DjangoApp/chai_description.html', {'chai': chai})
